@@ -62,12 +62,8 @@ def sum_profit(
     Returns:
         Sum of all extracted numeric values.
     """
-    total = 0.0
 
-    for number in generator(text):
-        total += number
-
-    return total
+    return sum(generator(text))
 
 
 text = ("Загальний дохід працівника складається з декількох частин: 1 000.01 як основний дохід, "
